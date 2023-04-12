@@ -85,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: inoanceproduction
-  username: inoance
+  database: inoance_production
+  username: postgres
   password: <%= ENV["INOANCE_DATABASE_PASSWORD"] %>
