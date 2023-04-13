@@ -3,8 +3,8 @@ class EntitiesController < ApplicationController
 
   # GET /entities or /entities.json
   def index
-    group = Group.find(params[:group_id])
-    @entities = group.entities
+    @group = Group.find(params[:group_id])
+    @entities = @group.entities.order(created_at: :desc)
   end
 
   # GET /entities/1 or /entities/1.json
