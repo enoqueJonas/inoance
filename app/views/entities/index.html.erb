@@ -6,7 +6,7 @@
   <% @entities.each do |entity| %>
     <%= render entity %>
     <p>
-      <%= link_to "Show this entity", entity %>
+      <%= link_to "Show this entity", entity_path(id: entity.id) %>
     </p>
   <% end %>
 </div>
