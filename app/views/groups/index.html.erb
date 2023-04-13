@@ -1,14 +1,27 @@
-<p style="color: green"><%= notice %></p>
+<html>
+  <head>
+     <%= stylesheet_link_tag "group_index", "data-turbo-track": "reload" %>
+  </head>
+  <p style="color: green"><%= notice %></p>
 
-<h1>Groups</h1>
+  <body>
+      <div class="group-wrapper">
+      <div class="group-header">
+        <h2>Categories</h2>
+      </div>
 
-<div id="groups">
-  <% @groups.each do |group| %>
-    <%= render group %>
-    <p>
-      <%= link_to "Show this group", group_entities_url(group.id) %>
-    </p>
-  <% end %>
-</div>
+      <div id="groups">
+        <% @groups.each do |group| %>
+          <%= render group %>
+        <% end %>
+      </div>
+        <a href=<%= new_group_path %> class="wrapper-btn-new-group">
+          <button class="btn-new-group">
+            New Group
+          </button>
+        </a>
+    </div>
+  </body>
+</html>
 
-<%= link_to "New group", new_group_path %>
+
