@@ -23,7 +23,7 @@
     margin-top: 15px;
     display: flex;
     flex-direction: column;
-    height: 10em;
+    height: 13em;
     align-items: center;
 }
 
@@ -33,6 +33,7 @@
 
 .form-item > * {
     width: 280px;
+    height: 30px;
 }
 
 .wrapper-btn-new-transaction{
