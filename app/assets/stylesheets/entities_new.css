@@ -15,8 +15,11 @@
     background-color: #3778c2;
 }
 
-.new-entity-header h2{
+.entity-title{
+    display: flex;
+    align-items: center;
     width: 280px;
+    height: 100px;
 }
 
 .form{

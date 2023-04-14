@@ -2,6 +2,13 @@ a{
     text-decoration: none;
 }
 
+.back-icon{
+    color: #fff;
+    margin: 8px;
+    width: 20px;
+    height: 20px;
+}
+
 body{
     width: 100%;
 }
@@ -24,7 +31,10 @@ body{
 }
 
 .entity-title{
+    display: flex;
+    align-items: center;
     width: 280px;
+    height: 100px;
 }
 
 .entity-title h1{
