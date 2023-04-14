@@ -1,5 +1,5 @@
 .new-entity-wrapper {
-  display: felx;
+  display: flex;
   flex-direction: column;
   width: 390px;
   align-items: center;
