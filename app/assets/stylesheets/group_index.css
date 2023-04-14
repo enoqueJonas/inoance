@@ -1,84 +1,84 @@
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.group-header{
-    width: 390px;
-    height: 110px;
-    background: #3778c2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
+.group-header {
+  width: 390px;
+  height: 110px;
+  background: #3778c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-h2{
-    margin-top: 0;
-    color: #fff;
+h2 {
+  margin-top: 0;
+  color: #fff;
 }
 
-.group-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 390px;
+.group-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 390px;
 }
 
-#groups{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 372px;
-    min-height: 10em;
-    height: auto;
+#groups {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 372px;
+  min-height: 10em;
+  height: auto;
 }
 
-.group-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 372px;
-    height: 90px;
-    margin: 5px;
-    padding: 0;
+.group-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 372px;
+  height: 90px;
+  margin: 5px;
+  padding: 0;
 }
 
-.group-card-link{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 368px;
-    height: 80px;
+.group-card-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 368px;
+  height: 80px;
 }
 
-.group-card-img img{
-    width: 80px;
-    height: 80px;
+.group-card-img img {
+  width: 80px;
+  height: 80px;
 }
 
-.wrapper-btn-new-group{
-    width: 370px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #5fb523;;
+.wrapper-btn-new-group {
+  width: 370px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5fb523;
 }
 
-.btn-new-group{
-    width: 355px;
-    height: 35px;
-    border: 1px dotted white;
-    background: #5fb523;;
-    color: white;
+.btn-new-group {
+  width: 355px;
+  height: 35px;
+  border: 1px dotted white;
+  background: #5fb523;
+  color: white;
 }
 
-.group-card-name{
-    color: rgba(0, 0, 0, .6);
+.group-card-name {
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.group-card-amount{
-    color: black;
-    font-weight: bold;
+.group-card-amount {
+  color: black;
+  font-weight: bold;
 }

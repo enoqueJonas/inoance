@@ -8,7 +8,7 @@ class Group < ApplicationRecord
   def transactions_sum
     sum = 0
     entities.each do |entity|
-      sum = sum + entity.amount
+      sum += entity.amount
     end
     sum
   end

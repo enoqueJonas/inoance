@@ -1,41 +1,41 @@
-.new-entity-wrapper{
-    display: felx;
-    flex-direction: column;
-    width: 390px;
-    align-items: center;
+.new-entity-wrapper {
+  display: felx;
+  flex-direction: column;
+  width: 390px;
+  align-items: center;
 }
 
-.new-entity-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 110px;
-    width: 390px;
-    background-color: #3778c2;
+.new-entity-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  width: 390px;
+  background-color: #3778c2;
 }
 
-.new-entity-header h2{
-    width: 280px;
+.new-entity-header h2 {
+  width: 280px;
 }
 
-.form{
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    height: 13em;
-    align-items: center;
+.form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 13em;
+  align-items: center;
 }
 
-.form-item{
-    margin: 6px;
+.form-item {
+  margin: 6px;
 }
 
 .form-item > * {
-    width: 280px;
-    height: 30px;
+  width: 280px;
+  height: 30px;
 }
 
-.wrapper-btn-new-transaction{
-    margin-top: 12px;
+.wrapper-btn-new-transaction {
+  margin-top: 12px;
 }
