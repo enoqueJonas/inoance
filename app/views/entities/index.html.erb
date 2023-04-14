@@ -1,17 +1,31 @@
-<p style="color: green"><%= notice %></p>
-<p>
-  <%= link_to "Back", groups_url %>
-</p>
-<h1>Entities</h1>
+<html>
+  <head>
+     <%= stylesheet_link_tag "entities_index", "data-turbo-track": "reload" %>
+  </head>
 
-<div id="entities">
-<p>Total Amount: <%= @group.transactions_sum %> </p>
-  <% @entities.each do |entity| %>
-    <%= render entity %>
-    <p>
-      <%= link_to "Show this entity", entity_path(id: entity.id) %>
-    </p>
-  <% end %>
-</div>
+  <body>
+    <p style="color: green"><%= notice %></p>
+    <div class="entity-wrapper">
+      <div class="entity-header">
+        <p>
+          <%= link_to "Back", groups_url %>
+        </p>
+        <div class="entity-title">
+          <h1>Transactions</h1>
+        </div>
+      </div>
 
-<%= link_to "New entity", new_entity_path %>
+      <div id="entities">
+        <p class="entity-amount">Total Amount: $<%= @group.transactions_sum %> </p>
+          <% @entities.each do |entity| %>
+            <%= render entity %>
+          <% end %>
+      </div>
+      <a href=<%= new_entity_path %> class="wrapper-btn-new-transaction">
+        <button class="btn-new-transaction">
+          New Transaction
+        </button>
+      </a>
+    </div>
+  </body>
+</html>

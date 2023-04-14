@@ -1,17 +1,9 @@
-<div id="<%= dom_id entity %>">
-  <p>
-    <strong>Name:</strong>
+<div id="<%= dom_id entity %>" class="entity-card">
+  <p class="entity-card-name">
     <%= entity.name %>
   </p>
 
-  <p>
-    <strong>Amount:</strong>
-    <%= entity.amount %>
+  <p class="entity-card-amount">
+    $<%= entity.amount %>
   </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= entity.user_id %>
-  </p>
-
 </div>
