@@ -74,3 +74,6 @@ end
 gem 'devise', '~> 4.9'
 
 gem 'font-awesome-sass', '~> 6.4.0'
+
+gem 'factory_bot_rails', '~> 6.2'
+
