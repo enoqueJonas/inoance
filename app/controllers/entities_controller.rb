@@ -12,6 +12,8 @@ class EntitiesController < ApplicationController
 
   # GET /entities/new
   def new
+    group_id = params[:group_id]
+    @group = Group.find(group_id)
     @entity = Entity.new
   end
 
@@ -28,7 +30,7 @@ class EntitiesController < ApplicationController
 
     respond_to do |format|
       if @entity.save
-        format.html { redirect_to entities_url(@group), notice: 'Entity was successfully created.' }
+        format.html { redirect_to entities_url, notice: 'Entity was successfully created.' }
         format.json { render :show, status: :created, location: @entity }
       else
         format.html { render :new, status: :unprocessable_entity }

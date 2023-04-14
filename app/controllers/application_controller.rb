@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   def after_sign_in_path_for(_resource)
     # Replace root_path with the path to your desired home page
-    user_groups_path(current_user)
+    groups_path(current_user)
   end
 
   protected
