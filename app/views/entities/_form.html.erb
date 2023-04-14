@@ -22,7 +22,7 @@
   <div class="form-item">
     <%= form.select :category, options_for_select(Group.all.where(user_id: current_user.id).map { |group| [group.name, group.id] })%>
   </div>
-    <a href=<%= new_entity_path %> class="wrapper-btn-new-transaction">
+    <div class="wrapper-btn-new-transaction">
       <%= form.submit 'Create Transaction', class: "btn-new-transaction" %>
-    </a>
+    </div>
 <% end %>

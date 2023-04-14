@@ -1,11 +1,16 @@
-<%= link_to "Back", groups_url %>
+<html>
+  <head>
+    <%= stylesheet_link_tag "group_new", "data-turbo-track": "reload" %>
+  </head>
 
-<h1>New group</h1>
+  <body>
+    <div class="new-entity-wrapper">
+      <div class="new-entity-header">
+        <%= link_to "Back", groups_url %>
+        <h2>New Categorie</h2>
+      </div>
+      <%= render "form", group: @group %>
+    </div>
+  </body>
+</html>
 
-<%= render "form", group: @group %>
-
-<br>
-
-<div>
-  <%= link_to "Back to groups", groups_url %>
-</div>
