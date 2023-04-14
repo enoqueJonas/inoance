@@ -1,4 +1,6 @@
 class GroupsController < ApplicationController
+  before_action :redirect_unauthenticated_user_to_custom_page
+
   # GET /groups or /groups.json
   def index
     @groups = Group.all
@@ -59,5 +61,11 @@ class GroupsController < ApplicationController
   # Only allow a list of trusted parameters through.
   def group_params
     params.require(:group).permit(:name, :icon, :user_id, :avatar)
+  end
+
+  def redirect_unauthenticated_user_to_custom_page
+    return if user_signed_in?
+
+    redirect_to '/users/'
   end
 end
