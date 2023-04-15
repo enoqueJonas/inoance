@@ -85,6 +85,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: inoance_production
   username: postgres
   password: <%= ENV["INOANCE_DATABASE_PASSWORD"] %>
