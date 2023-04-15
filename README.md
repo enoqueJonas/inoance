@@ -70,7 +70,7 @@ This app allows you to keep track of your finances. You can group a category of 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### 🚀 Live Demo <a name="live-demo"></a>
-[Link](https://inoance.onrender.com) to live demo.
+[Link](https://rails-5ly4.onrender.com) to live demo.
 
 <!-- GETTING STARTED -->
 
