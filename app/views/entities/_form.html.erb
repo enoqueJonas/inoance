@@ -1,0 +1,28 @@
+<%= form_with model: entity, url: entities_path, class: "form" do |form| %>
+  <% if entity.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(entity.errors.count, "error") %> prohibited this entity from being saved:</h2>
+
+      <ul>
+        <% entity.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-item">
+    <%= form.text_field :name, placeholder: 'Name' %>
+  </div>
+
+  <div class="form-item">
+    <%= form.text_field :amount, placeholder: 'Amount' %>
+  </div>
+
+  <div class="form-item">
+    <%= form.select :category, options_for_select(Group.all.where(user_id: current_user.id).map { |group| [group.name, group.id] })%>
+  </div>
+    <div class="wrapper-btn-new-transaction">
+      <%= form.submit 'Create Transaction', class: "btn-new-transaction" %>
+    </div>
+<% end %>

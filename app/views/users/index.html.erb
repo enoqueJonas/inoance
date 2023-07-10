@@ -1,0 +1,24 @@
+<html>
+  <head>
+     <%= stylesheet_link_tag "users_index", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <p style="color: green"><%= notice %></p>
+
+    <div class='splash-wrapper'>
+      <div class="logo">
+        <%= image_tag('logo.png', alt: 'My App Logo', class: 'logo-img') %>
+      </div>
+      <div class="actions-splash">
+        <a href = '/users/sign_in/' class='login-button-wrapper action-button'>
+          <button>Log in</button>
+        </a>
+        <a href = '/users/sign_up/' class='signup-button-wrapper action-button'>
+          <button>Sign up</button>
+        </a>
+      </div>
+    </div>
+</body>
+
+</html>

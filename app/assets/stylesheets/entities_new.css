@@ -1,0 +1,46 @@
+/* stylelint-disable function-calc-no-invalid */
+
+.new-entity-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  align-items: center;
+}
+
+.new-entity-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  width: 390px;
+  background-color: #3778c2;
+}
+
+.entity-title {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 100px;
+}
+
+.form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 13em;
+  align-items: center;
+}
+
+.form-item {
+  margin: 6px;
+}
+
+.form-item > * {
+  width: 280px;
+  height: 30px;
+}
+
+.wrapper-btn-new-transaction {
+  margin-top: 12px;
+}

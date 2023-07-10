@@ -1,0 +1,27 @@
+<html>
+  <head>
+     <%= stylesheet_link_tag "group_index", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <p style="color: green"><%= notice %></p>
+      <div class="group-wrapper">
+      <div class="group-header">
+        <h2>Categories</h2>
+      </div>
+
+      <div id="groups">
+        <% @groups.each do |group| %>
+          <%= render group %>
+        <% end %>
+      </div>
+        <a href=<%= new_group_path %> class="wrapper-btn-new-group">
+          <button class="btn-new-group">
+            New Categorie
+          </button>
+        </a>
+    </div>
+  </body>
+</html>
+
+

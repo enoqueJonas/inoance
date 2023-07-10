@@ -1,0 +1,25 @@
+<%= form_with model: group, url: groups_url, class: " form" do |form| %>
+  <% if group.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
+
+      <ul>
+        <% group.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-item">
+    <%= form.text_field :name, placeholder: 'Name' %>
+  </div>
+
+  <div class="form-item">
+    <%= form.file_field :avatar, style: "display: block" %>
+  </div>
+
+  <div class="wrapper-btn-new-transaction">
+      <%= form.submit 'Create Categorie', class: "btn-new-transaction" %>
+    </div>
+<% end %>

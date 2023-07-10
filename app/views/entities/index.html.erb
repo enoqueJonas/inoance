@@ -1,0 +1,31 @@
+<html>
+  <head>
+     <%= stylesheet_link_tag "entities_index", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <p style="color: green"><%= notice %></p>
+    <div class="entity-wrapper">
+      <div class="entity-header">
+        <p>
+          <%= link_to "", groups_url, class: 'fa fa-chevron-left back-icon' %>
+        </p>
+        <div class="entity-title">
+          <h1>Transactions</h1>
+        </div>
+      </div>
+
+      <div id="entities">
+        <p class="entity-amount">Total Amount: $<%= @group.transactions_sum %> </p>
+          <% @entities.each do |entity| %>
+            <%= render entity %>
+          <% end %>
+      </div>
+      <a href=<%= new_group_entity_path %> class="wrapper-btn-new-transaction">
+        <button class="btn-new-transaction">
+          New Transaction
+        </button>
+      </a>
+    </div>
+  </body>
+</html>

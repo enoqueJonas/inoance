@@ -1,0 +1,18 @@
+<html>
+  <head>
+     <%= stylesheet_link_tag "entities_new", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <div class="new-entity-wrapper">
+      <div class="new-entity-header">
+        <%= link_to "", group_entities_url(@group.id), class: 'fa fa-chevron-left back-icon' %>
+        <div class="entity-title">
+          <h2>New Transaction</h2>
+        </div>
+      </div>
+
+      <%= render "form", entity: @entity, categories: @categories %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<div id="<%= dom_id group %>" class="group-card">
+  <a href = <%= group_entities_url(group.id) %> class="group-card-link">
+    <p class="group-card-img">
+      <%= image_tag url_for(group.avatar) %>
+    </p>
+
+    <p class="group-card-name">
+      <%= group.name %>
+    </p>
+
+    <p class="group-card-amount">
+      $<%= group.transactions_sum %>
+    </p>
+  </a>
+</div>
